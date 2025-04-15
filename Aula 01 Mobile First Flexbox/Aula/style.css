@@ -4,7 +4,7 @@
     padding: 0;
     /* tamanho do elemento composto ignora borda no layout */
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 #pai {
@@ -37,7 +37,7 @@
     /* align-items: baseline; alinha os filhos na linha de base do texto */
 
     gap: 20px; /* espaço entre os filhos. funciona com top, rigth, bottom, left*/
-    
+
     /* row-gap: 20px; espaço entre os filhos na direção do eixo transversal */
     /* column-gap: 20px; espaço entre os filhos na direção do eixo principal */
 }

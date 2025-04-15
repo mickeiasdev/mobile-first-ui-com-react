@@ -1,36 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Exercicio 2</title>
     <style>
-        ul {
-            display: flex;
-            justify-content: center;
-            flex-direction: column-reverse;
-            gap: 20px;
-            list-style: none;
-        }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+      }
+      footer {
+        display: flex;
+      }
+      a {
+        text-decoration: none;
+        color: black;
+        font-size: 20px;
+        font-weight: 700;
+        margin: 20px auto;
+      }
+      ul {
+        display: flex;
+        justify-content: center;
+        flex-direction: column-reverse;
+        gap: 20px;
+        list-style: none;
+      }
+      li {
+        background-color: brown;
+        padding: 10px;
+        color: white;
+        width: 100px;
+      }
     </style>
-</head>
-<!--
+  </head>
+  <!--
     Exercício 2: crie um container flexível que distribua quatro itens em uma coluna vertical (column)
     e inverta a ordem dos itens. Use a propriedade flex-direction.
 -->
-<body>
+  <body>
     <header>
-        <nav>
-            <ul>
-                <li>Item 1</li>
-                <li>Item 2</li>
-                <li>Item 3</li>
-                <li>Item 4</li>
-            </ul>
-        </nav>
+      <nav>
+        <ul>
+          <li>Item 1</li>
+          <li>Item 2</li>
+          <li>Item 3</li>
+          <li>Item 4</li>
+        </ul>
+      </nav>
     </header>
     <footer>
-        <a href="index.html">Voltar para lista de exercicios.</a>
+      <a href="index.html">Voltar para lista de exercicios.</a>
     </footer>
-</body>
+  </body>
 </html>

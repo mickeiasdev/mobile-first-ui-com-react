@@ -1,33 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Exercicio 8</title>
     <style>
-        nav {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            list-style: none;
-        }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+      }
+      footer {
+        display: flex;
+      }
+      a {
+        text-decoration: none;
+        color: black;
+        font-size: 20px;
+        font-weight: 700;
+        margin: 20px auto;
+      }
+      nav {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        list-style: none;
+        color: white;
+      }
+      nav p {
+        background-color: brown;
+        width: 250px;
+        padding: 10px;
+      }
     </style>
-</head>
-<!--
+  </head>
+  <!--
     Exercício 8: Crie um container flexível com três itens e centralize todos os itens horizontalmente (center).
 -->
-<body>
+  <body>
     <header>
-        <nav>
-            <p>Item 1</p>
-            <p>Item 2</p>
-            <p>Item 3</p>
-            <p>Item 4</p>
-            <p>Item 5</p>
-        </nav>
+      <nav>
+        <p>Item 1</p>
+        <p>Item 2</p>
+        <p>Item 3</p>
+      </nav>
     </header>
     <footer>
-        <a href="index.html">Voltar para lista de exercicios.</a>
+      <a href="index.html">Voltar para lista de exercicios.</a>
     </footer>
-</body>
+  </body>
 </html>

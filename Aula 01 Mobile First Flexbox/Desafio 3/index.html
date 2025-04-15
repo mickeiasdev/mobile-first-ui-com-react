@@ -12,6 +12,7 @@
                 margin: 0 auto;
                 padding: 20px;
                 border-radius: 5px;
+                user-select: none;
             }
             h1 {
                 font-size: 20px;
@@ -24,10 +25,18 @@
                 font-size: 20px;
                 color: white;
                 text-transform: uppercase;
+                transition: 0.3s ease-in-out;
+            }
+            .mainList p:hover {
+                cursor: pointer;
+                color: rgb(199, 199, 199);
             }
             .mainFooter {
                 color: white;
                 margin-top: 75px;
+            }
+            .mainFooter img {
+                cursor: pointer;
             }
             .mainFooter p {
                 font-size: 10px;

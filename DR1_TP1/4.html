@@ -1,45 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Exercicio 4</title>
     <style>
-        ul {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            list-style: none;
-            color: white;
-        }
-        ul li { 
-            background-color: brown;
-            width: 200px;
-            flex-shrink: 2;
-            padding: 10px;
-        }
-        .item3 {
-            flex-shrink: 1;
-        }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+      }
+      footer {
+        display: flex;
+      }
+      a {
+        text-decoration: none;
+        color: black;
+        font-size: 20px;
+        font-weight: 700;
+        margin: 20px auto;
+      }
+      ul {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        list-style: none;
+        color: white;
+      }
+      ul li {
+        background-color: brown;
+        width: 200px;
+        flex-shrink: 2;
+        padding: 10px;
+      }
+      .item3 {
+        flex-shrink: 1;
+      }
     </style>
-</head>
-<!--
+  </head>
+  <!--
     Exercício 4: Crie um container flexível com quatro itens. Configure o terceiro item para encolher (flex-shrink)
     menos que os outros três quando o container for redimensionado.
 -->
-<body>
+  <body>
     <header>
-        <nav>
-            <ul>
-                <li>Item 1</li>
-                <li>Item 2</li>
-                <li class="item3">Item 3</li>
-                <li>Item 4</li>
-            </ul>
-        </nav>
+      <nav>
+        <ul>
+          <li>Item 1</li>
+          <li>Item 2</li>
+          <li class="item3">Item 3</li>
+          <li>Item 4</li>
+        </ul>
+      </nav>
     </header>
     <footer>
-        <a href="index.html">Voltar para lista de exercicios.</a>
+      <a href="index.html">Voltar para lista de exercicios.</a>
     </footer>
-</body>
+  </body>
 </html>

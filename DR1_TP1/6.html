@@ -1,33 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Exercicio 6</title>
     <style>
-        nav {
-            display: flex;
-            justify-content: flex-start;
-            gap: 20px;
-            list-style: none;
-        }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+      }
+      footer {
+        display: flex;
+      }
+      a {
+        text-decoration: none;
+        color: black;
+        font-size: 20px;
+        font-weight: 700;
+        margin: 20px auto;
+      }
+      header {
+        display: flex;
+        justify-content: flex-start;
+      }
+      nav {
+        display: flex;
+        gap: 20px;
+        width: 75%;
+        list-style: none;
+        color: white;
+      }
+      nav p {
+        background-color: brown;
+        width: 350px;
+        padding: 10px;
+      }
     </style>
-</head>
-<!--
+  </head>
+  <!--
     Exercício 6: Crie um container flexível com cinco itens e alinhe todos os itens ao início do container (flex-start).
 -->
-<body>
+  <body>
     <header>
-        <nav>
-            <p>Item 1</p>
-            <p>Item 2</p>
-            <p>Item 3</p>
-            <p>Item 4</p>
-            <p>Item 5</p>
-        </nav>
+      <nav>
+        <p>Item 1</p>
+        <p>Item 2</p>
+        <p>Item 3</p>
+        <p>Item 4</p>
+        <p>Item 5</p>
+      </nav>
     </header>
     <footer>
-        <a href="index.html">Voltar para lista de exercicios.</a>
+      <a href="index.html">Voltar para lista de exercicios.</a>
     </footer>
-</body>
+  </body>
 </html>

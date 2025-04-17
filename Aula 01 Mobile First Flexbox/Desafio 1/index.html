@@ -26,6 +26,17 @@
             gap: 25px;
             align-items: center;
         }
+        .navHead-left a {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            text-decoration: none;
+        }
+        .navHead-left a span {
+            font-size: 15px;
+            color: #777;;
+            font-weight: 600;
+        }
         .navHead-left img {
             cursor: pointer;
         }
@@ -35,19 +46,28 @@
             align-items: center;
         }
         .navHead-right a {
+            display: flex;
+            align-items: center;
+            gap: 15px;
             text-decoration: none;
-            color: #1323d4;
+            color: #3645ee;
             font-size: 30px;
-            font-weight: 700;
+        }
+        .navHead-right a span {
+            font-size: 15px;
+            color: #777;;
+            font-weight: 600;
         }
         .navList ul {
             border-bottom: 2px solid #f5f6f7;
             border-top: 2px solid #f5f6f7;
             list-style: none;
             display: flex;
-            justify-content: space-between;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
             align-items: center;
-            padding: 20px 50px;
+            gap: 20px;
+            padding: 10px 50px;
         }
         .bar {
             height: 50px;
@@ -59,6 +79,7 @@
             font-weight: 700;
             transition: all 0.3s ease-in-out;
         }
+        
         .item1 {
             color: #f03018;
         }.item2 {
@@ -80,25 +101,32 @@
         }.item10 {
             color: #0e0e0e;
         }
+        
+        /* cansei, so fiz esse frufru aqui... */
+        @media (max-width: 850px) {
+            .navHead-right a span {
+                display: none;
+            }
+        }
     </style>
 </head>
 <body>
     <header>
         <nav class="navHead">
             <div class="navHead-left">
-                <img src="https://s3.glbimg.com/v1/AUTH_fd78dc4be9404a2e92b908ade306e9e6/prod/header_menu_svgs/menu-button.svg" alt="menu globo" height="30">
+                <a href="#"><img src="https://s3.glbimg.com/v1/AUTH_fd78dc4be9404a2e92b908ade306e9e6/prod/header_menu_svgs/menu-button.svg" alt="menu globo" height="30"><span>Menu</span></a>
                 <div class="bar"></div>
                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Logo_do_Portal_Globo.com_%282021%E2%80%93presente%29.svg/1280px-Logo_do_Portal_Globo.com_%282021%E2%80%93presente%29.svg.png" alt="logo globo" height="50">
             </div>
             <div class="navHead-right">
-                <a href="#"><i class="fa-solid fa-user"></i></a>
+                <a href="#"><span>Sua conta</span><i class="fa-solid fa-user"></i></a>
                 <div class="bar"></div>
-                <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                <a href="#"><span>Busca</span><i class="fa-solid fa-magnifying-glass"></i></a>
         </nav>
         <nav class="navList">
             <ul>
                 <li ><a class="item1" href="#">g1</a></li>
-                <li><a class="item2" href="#">o globo</a></li>
+                <li><a class="item2" href="#">globo</a></li>
                 <li><a class="item3" href="#">valor</a></li>
                 <li><a class="item4" href="#">ge</a></li>
                 <li><a class="item5" href="#">cartola</a></li>

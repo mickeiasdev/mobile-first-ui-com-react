@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercicio 01</title>
+    <style>
+      * {
+        margin: 0;
+      }
+      img {
+        display: block;
+        width: 100vw;
+        height: 90vh;
+        object-fit: cover;
+      }
+      footer {
+        height: 10vh;
+        display: flex;
+        gap: 30px;
+        background-color: #1f1e1e;
+        align-items: center;
+        justify-content: center;
+      }
+      a {
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+        font-weight: 700;
+      }
+      a:hover {
+        color: rgb(163, 163, 163);
+      }
+      .seta {
+        color: white;
+        font-size: 30px;
+        border: 1px solid white;
+        padding: 0px 20px;
+        border-radius: 5px;
+        transition: 0.25s ease-in-out;
+      }
+      .seta:hover {
+        color: white;
+        background-color: rgb(58, 58, 58);
+        transform: scale(1.05);
+      }
+      .hiden {
+        opacity: 0;
+        user-select: none;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+    Tarefa 1 Criação de Layouts com Imagens Fluídas I
+
+    Crie um layout básico com imagem responsiva que se ajuste ao tamanho da tela usando a tag picture.
+
+    Utilize a tag específica indicada para o uso de imagens na página HTML.
+    Defina a possível saída para 3 resoluções, 576px, 992px, e todas acima.
+    A imagem deve ocupar 100% da largura do Viewport.
+    -->
+    <picture>
+      <source
+        id="mobile"
+        srcset="https://placehold.co/576?text=MOBILE"
+        media="(max-width: 576px)"
+      />
+      <source
+        id="tablet"
+        srcset="https://placehold.co/992?text=TABLET"
+        media="(max-width: 992px)"
+      />
+      <img id="desktop" src="https://placehold.co/1000?text=DESKTOP" />
+    </picture>
+    <footer>
+      <p class="seta hiden"><</p>
+      <a href="index.html">Lista de exercicios</a>
+      <a href="2.html" class="seta">></a>
+    </footer>
+  </body>
+</html>

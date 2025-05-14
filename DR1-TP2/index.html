@@ -5,6 +5,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Lista de Exercicios DR1-TP1</title>
         <style>
+            
+
+
+            
+            
             * {
                 margin: 0;
                 padding: 0;
@@ -14,6 +19,7 @@
             body {
                 background-color: #f4f4f4;
                 background-color: #1f1e1e;
+                height: 100vh;
             }
             header {
                 text-align: center;
@@ -24,6 +30,7 @@
             main {
                 display: flex;
                 justify-content: center;
+                align-items: center;
             }
             ul {
                 list-style-type: none;
@@ -48,6 +55,14 @@
             a:hover {
                 background-color: rgb(255, 47, 47);
                 transform: scale(1.05);
+            }
+
+            @media (max-width: 700px) {
+                ul {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                }
             }
         </style>
     </head>

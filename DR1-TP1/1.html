@@ -64,10 +64,13 @@
                 border-radius: 5px;
                 transition: 0.25s ease-in-out;
             }
-
             li:hover {
                 background-color: rgb(255, 47, 47);
                 transform: scale(1.05);
+            }
+            .hiden {
+                opacity: 0;
+                user-select: none;
             }
         </style>
     </head>
@@ -86,8 +89,8 @@
             </nav>
         </header>
         <footer>
-            <a href="#"></a>
-            <a href="index.html">Voltar para lista de exercicios</a>
+            <p class="seta hiden""><</p>
+            <a href="index.html">Listar exercicios</a>
             <a href="2.html" class="seta">></a>
         </footer>
     </body>

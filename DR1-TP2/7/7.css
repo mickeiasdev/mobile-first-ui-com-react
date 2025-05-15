@@ -12,7 +12,7 @@ body {
     "sidebar main" 85vh
     "footer footer" 5vh
     / 25vw 75vw;
-    color: white;
+  color: white;
 }
 
 header {
@@ -29,14 +29,16 @@ aside {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 25px;
 }
 
 main {
   grid-area: main;
   background-color: rgb(54, 1, 92);
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
+  padding: 25px;
+  gap: 25px;
 }
 
 footer {
@@ -44,7 +46,7 @@ footer {
   height: 5vh;
   display: flex;
   gap: 20px;
-  padding: 10px 0;
+  padding: 10px;
   background-color: #1f1e1e;
   align-items: center;
   justify-content: center;

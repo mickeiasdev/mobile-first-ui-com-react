@@ -6,37 +6,7 @@
 }
 
 body {
-  display: grid;
-  grid-template:
-    "header header" 10vh
-    "sidebar main" 85vh
-    "footer footer" 5vh
-    / 25vw 75vw;
-    color: white;
-}
-
-header {
-  grid-area: header;
-  background-color: #640f0f;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-aside {
-  grid-area: sidebar;
-  background-color: #0e5e0e;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-main {
-  grid-area: main;
-  background-color: rgb(54, 1, 92);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  background-color: brown;
 }
 
 footer {
@@ -44,7 +14,7 @@ footer {
   height: 5vh;
   display: flex;
   gap: 20px;
-  padding: 10px 0;
+  padding: 10px;
   background-color: #1f1e1e;
   align-items: center;
   justify-content: center;

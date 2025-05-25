@@ -5,8 +5,9 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-body {
-  background-color: #333;
+main {
+  height: 95vh;
+  background-color: #ff8585;
 }
 
 footer {
@@ -43,7 +44,7 @@ footer a:hover {
 }
 
 @media (max-width: 1200px) {
-  body {
+  main {
     background-color: cornflowerblue;
   }
 }

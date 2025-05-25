@@ -1,57 +1,58 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Exercicio 01</title>
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: Arial, sans-serif
-      }
-      img {
-        display: block;
-        width: 100vw;
-        height: 95vh;
-        object-fit: cover;
-      }
-      footer {
-        height: 5vh;
-        display: flex;
-        gap: 20px;
-        background-color: #1f1e1e;
-        align-items: center;
-        justify-content: center;
-      }
-      a {
-        text-decoration: none;
-        color: white;
-        font-size: 20px;
-        font-weight: 700;
-      }
-      a:hover {
-        color: rgb(163, 163, 163);
-      }
-      .seta {
-        border: 1px solid white;
-        padding: 0px 20px;
-        border-radius: 5px;
-        transition: 0.25s ease-in-out;
-      }
-      .seta:hover {
-        background-color: rgb(58, 58, 58);
-        transform: scale(1.05);
-      }
-      .hiden {
-        opacity: 0;
-        user-select: none;
-      }
-    </style>
-  </head>
-  <body>
-    <!-- 
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Exercicio 01</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: Arial, sans-serif;
+            }
+            img {
+                display: block;
+                width: 100vw;
+                height: 95vh;
+                object-fit: cover;
+            }
+            footer nav {
+                height: 5vh;
+                display: flex;
+                gap: 20px;
+                background-color: #1f1e1e;
+                align-items: center;
+                justify-content: center;
+            }
+            a {
+                text-align: center;
+                text-decoration: none;
+                color: white;
+                font-size: 20px;
+                font-weight: 700;
+            }
+            a:hover {
+                color: rgb(163, 163, 163);
+            }
+            .seta {
+                border: 1px solid white;
+                padding: 0px 20px;
+                border-radius: 5px;
+                transition: 0.25s ease-in-out;
+            }
+            .seta:hover {
+                background-color: rgb(58, 58, 58);
+                transform: scale(1.05);
+            }
+            .hiden {
+                opacity: 0;
+                user-select: none;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- 
     Tarefa 1 Criação de Layouts com Imagens Fluídas I
 
     Crie um layout básico com imagem responsiva que se ajuste ao tamanho da tela usando a tag picture.
@@ -60,23 +61,30 @@
     Defina a possível saída para 3 resoluções, 576px, 992px, e todas acima.
     A imagem deve ocupar 100% da largura do Viewport.
     -->
-    <picture>
-      <source
-        id="mobile"
-        srcset="https://placehold.co/576?text=MOBILE"
-        media="(max-width: 576px)"
-      />
-      <source
-        id="tablet"
-        srcset="https://placehold.co/992?text=TABLET"
-        media="(max-width: 992px)"
-      />
-      <img id="desktop" src="https://placehold.co/1000?text=DESKTOP" />
-    </picture>
-    <footer>
-      <p class="seta hiden"><</p>
-      <a href="index.html">Listar exercicios</a>
-      <a href="2.html" class="seta">></a>
-    </footer>
-  </body>
+        <main>
+            <picture>
+                <source
+                    srcset="https://placehold.co/576?text=MOBILE"
+                    alt="Imagem de exemplo para resolução Mobile"
+                    media="(max-width: 576px)"
+                />
+                <source
+                    srcset="https://placehold.co/992?text=TABLET"
+                    alt="Imagem de exemplo para resolução Tablet"
+                    media="(max-width: 992px)"
+                />
+                <img
+                    src="https://placehold.co/1000?text=DESKTOP"
+                    alt="Imagem de exemplo para resolução Desktop"
+                />
+            </picture>
+        </main>
+        <footer>
+            <nav>
+                <p class="seta hiden"><</p>
+                <a href="index.html">Listar exercicios</a>
+                <a href="2.html" class="seta">></a>
+            </nav>
+        </footer>
+    </body>
 </html>

@@ -12,16 +12,32 @@
             crossorigin="anonymous"
             referrerpolicy="no-referrer"
         />
+        <script src="4.js" defer></script>
     </head>
     <body>
+        <!--
+        Tarefa 4 Organização de elementos em um layout responsivo II
+
+        Reproduza o layout da imagem, organizando o container com duas seções na vertical (menu e apresentação) e duas na horizontal (a seção de apresentação deve ser dividida entre textos e imagem).
+
+        Reproduza conforme a imagem, organizando e distribuindo os elementos com Flexbox.
+        Não use CSS no arquivo HTML. 
+        O Container principal deve ocupar 100% da largura do Viewport.
+        Use Media Query para ajustar o conteúdo do exercício anterior, para visualizações a partir de 992px.
+        A borda é meramente ilustrativa.
+        -->
         <div class="container">
-            <header>
-                <a href="#">Projetos</a>
-                <a href="#">Sobre mim</a>
-                <a href="#">Contato</a>
-                <i class="fa-solid fa-bars hide"></i>
+            <header id="header">
+                <nav class="menu">
+                    <ul>
+                        <li><a href="#">Início</a></li>
+                        <li><a href="#">Sobre</a></li>
+                        <li><a href="#">Projetos</a></li>
+                        <li><a href="#">Contato</a></li>
+                    </ul>
+                </nav>
             </header>
-            <main>
+            <main class="apresentacao">
                 <section class="secImagem">
                     <img
                         src="http://placehold.co/500?text=PERFIL"
@@ -41,6 +57,7 @@
                         voluptatum id ipsa nam non ipsam architecto beatae
                         molestias.
                     </p>
+                    <a href="#"><button >Download Resume</button></a>
                 </section>
             </main>
             <footer>
@@ -50,4 +67,3 @@
             </footer>
         </div>
     </body>
-</html>

@@ -1,50 +1,49 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 main {
-  height: 95vh;
-  background-color: #ff8585;
+    height: 95vh;
+    background-color: #ff8585;
 }
 
 footer {
-  grid-area: footer;
-  height: 5vh;
-  display: flex;
-  gap: 20px;
-  padding: 10px;
-  background-color: #1f1e1e;
-  align-items: center;
-  justify-content: center;
+    height: 5vh;
+    display: flex;
+    gap: 20px;
+    padding: 10px 0;
+    background-color: #1f1e1e;
+    align-items: center;
+    justify-content: center;
 }
 
 footer a {
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
 }
 
 footer a:hover {
-  color: rgb(163, 163, 163);
+    color: rgb(163, 163, 163);
 }
 
 .seta {
-  border: 1px solid white;
-  padding: 0px 10px;
-  border-radius: 5px;
-  transition: 0.25s ease-in-out;
+    border: 1px solid white;
+    padding: 0 10px;
+    border-radius: 5px;
+    transition: 0.25s ease-in-out;
 }
 
 .seta:hover {
-  background-color: rgb(58, 58, 58);
-  transform: scale(1.05);
+    background-color: rgb(58, 58, 58);
+    transform: scale(1.05);
 }
 
 @media (max-width: 1200px) {
-  main {
-    background-color: cornflowerblue;
-  }
+    main {
+        background-color: cornflowerblue;
+    }
 }

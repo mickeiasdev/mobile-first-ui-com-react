@@ -2,25 +2,25 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Courier, monospace;
+    font-family: Arial, sans-serif;
 }
 
 body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    min-width: 100vw;
     background-color: #1f1e1e;
     color: white;
-    height: 100vh;
 }
 
 main {
-    display: flex;
     flex: 1;
-    height: 95vh;
+    display: flex;
+    justify-content: center;
+    min-height: 95vh;
     padding: 30px;
     gap: 30px;
-    width: 100%;
-}
-
-img {
     width: 100%;
 }
 
@@ -31,59 +31,58 @@ div {
     justify-content: center;
     align-items: top;
 }
+
 img {
     width: 300px;
     height: 300px;
 }
 
-footer nav {
-    min-height: 5vh;
+footer {
+    grid-area: footer;
+    height: 5vh;
+    width: 100%;
     display: flex;
-    gap: 30px;
+    gap: 20px;
+    padding: 10px;
     background-color: #1f1e1e;
     align-items: center;
     justify-content: center;
 }
-a {
-    text-align: center;
+
+footer a {
     text-decoration: none;
     color: white;
-    font-size: 20px;
-    font-weight: 700;
+    font-weight: bold;
 }
-a:hover {
+
+footer a:hover {
     color: rgb(163, 163, 163);
 }
+
 .seta {
     border: 1px solid white;
-    padding: 0px 20px;
+    padding: 0px 10px;
     border-radius: 5px;
     transition: 0.25s ease-in-out;
 }
+
 .seta:hover {
     background-color: rgb(58, 58, 58);
     transform: scale(1.05);
 }
 
 @media (max-width: 768px) {
-    body {
-        display: flex;
-        flex-direction: column;
-    }
     main {
-        flex: 1;
         flex-direction: column;
+        justify-content: center;
         padding: 30px;
-        gap: 30px;
+        gap: 10px;
     }
     div {
         width: 100%;
-        display: flex;
-        justify-content: center;
+        max-width: 100%;
     }
     img {
-        width: 50%;
-    }
-    footer {
+        width: 70%;
     }
 }

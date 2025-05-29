@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+div {
+    display: flex;
+    gap: 1rem;
+}
+
+button {
+    min-width: fit-content;
+    height: fit-content;
+    padding: 1rem 2rem;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+footer nav {
+    height: 5vh;
+    min-width: 100vw;
+    display: flex;
+    gap: 20px;
+    padding: 10px 0;
+    background-color: #1f1e1e;
+    align-items: center;
+    justify-content: center;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+footer a:hover {
+    color: rgb(163, 163, 163);
+}
+
+.seta {
+    border: 1px solid white;
+    padding: 0px 10px;
+    border-radius: 5px;
+    transition: 0.25s ease-in-out;
+}
+
+.seta:hover {
+    background-color: rgb(58, 58, 58);
+    transform: scale(1.05);
+}
+
+@media (pointer: none) {
+    button {
+        background-color: gray;
+        color: white;
+    }
+}
+
+@media (pointer: coarse) {
+    button {
+        background-color: orange;
+        color: white;
+        font-size: 1.2rem;
+    }
+
+    button:active {
+        background-color: darkorange;
+    }
+}
+
+@media (pointer: fine) {
+    button {
+        background-color: royalblue;
+        color: white;
+    }
+
+    button:hover {
+        background-color: navy;
+        transform: scale(1.05);
+    }
+}

@@ -8,37 +8,34 @@
 body {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     min-height: 100vh;
-    min-width: 100vw;
-    background-color: #1f1e1e;
-    color: white;
+    margin: 0;
 }
 
 main {
     flex: 1;
     display: flex;
+    align-items: center;
     justify-content: center;
-    min-height: 95vh;
-    padding: 30px;
-    gap: 30px;
-    width: 100%;
 }
 
 div {
-    width: fit-content;
-    max-width: 50%;
     display: flex;
-    justify-content: center;
-    align-items: top;
+    gap: 1rem;
 }
 
-img {
-    width: 300px;
-    height: 300px;
+button {
+    padding: 1rem 2rem;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
-footer nav{
+footer nav {
     height: 5vh;
+    min-width: 100vw;
     display: flex;
     gap: 20px;
     padding: 10px 0;
@@ -69,18 +66,34 @@ footer a:hover {
     transform: scale(1.05);
 }
 
-@media (max-width: 768px) {
-    main {
-        flex-direction: column;
-        justify-content: center;
-        padding: 30px;
-        gap: 10px;
+@media (pointer: none) {
+    button {
+        background-color: gray;
+        color: white;
     }
-    div {
-        width: 100%;
-        max-width: 100%;
+}
+
+@media (hover: none) {
+    button {
+        background-color: tomato;
+        color: white;
+        font-size: 1.2rem;
     }
-    img {
-        width: 70%;
+
+    button:active {
+        background-color: darkred;
+        transform: scale(0.95);
+    }
+}
+
+@media (hover: hover) {
+    button {
+        background-color: seagreen;
+        color: white;
+    }
+
+    button:hover {
+        background-color: darkgreen;
+        transform: scale(1.1);
     }
 }
